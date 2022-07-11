@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+</head>
+<body>
+    <div class="container">
+        <h2 class="main_heading">Fill out the form below</h2>
+        <hr>
+        <h3>User Information:</h3>
+        <label>First Name: <input type="text" name="Name" id="Name" placeholder="First name" required></label>
+        <label>Last Name: <input type="text" name="Name" id="Name" placeholder="Last name" required></label>
+        <Fieldset>
+            <legend>Gender:</legend>
+            <label>Male <input type="radio" name="Gender" id="gender">
+                   Female <input type="radio" name="Gender" id="gender">
+                   Others <input type="radio" name="Gender" id="gender">
+            </label>
+        </Fieldset>
+        <label>Adress: <textarea name="Adress" id="adress" cols="50" rows="10" placeholder="Write here your full adress..."></textarea></label>
+        <label>Email: <input type="email" name="Email" id="email" placeholder="Enter your Email Adress"></label>
+        <lebel>Pincode: <input type="password" name="Piccode" id="Pincode" placeholder="Enter your pincode"></lebel>
+        <h3>Payment Information:</h3>
+        <label>Choose a card:
+            <select name="" id="">
+                <option value="visa">VISA</option>
+                <option value="master card">Master card</option>
+                <option value="Creadit card">Creadit card</option>
+                <option value="Debit card">Debit card</option>
+            </select>
+        </label>
+        <label>Card number: <input type="number" name="Card number" id="Card number" placeholder="Enter your card number" required></label>
+        <labe>Expiration Date: <input type="date" name="Expiration date" id="Expiration date"></labe>
+        <label>CVV: <input type="password" name="cvv" id="cvv" placeholder="Enter your cvv code"></label>
+        <div id="center">
+            <input class="button" type="submit" value="Payment Now">
+        </div>
+    </div>
+</body>
+</html>
